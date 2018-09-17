@@ -1,0 +1,6 @@
+endpoint: https://eu1.prisma.sh/neo/database/dev
+datamodel: datamodel.graphql
+secret: secret
+hooks:
+  post-deploy:
+    - graphql get-schema -p database

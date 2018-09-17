@@ -1,0 +1,7 @@
+type Slide {
+    id: ID!@unique
+    createdAt: DateTime!
+    title: String!
+    description: String!
+    url: String!
+}

@@ -1,0 +1,10 @@
+# import Slide from "./generated/prisma.graphql"
+
+  type Query {
+    info: String!
+    slides: [Slide!]!
+  }
+
+  type Mutation {
+    slide(title: String!, description: String!, url: String!): Slide!
+  }
